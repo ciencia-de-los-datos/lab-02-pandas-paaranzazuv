@@ -195,7 +195,7 @@ def pregunta_10():
          
     dfn = df.groupby("_c1")["_c2"].agg(lambda x: ":".join(map(str,x.sort_values( )))).reset_index()
 
-    dfn.columns = ['_c0', '_c1']
+    #dfn.columns = ['_c0', '_c1']
 
 # Mostrar el DataFrame resultante
     
@@ -217,8 +217,7 @@ def pregunta_10():
 
 
 
-
-
+print(pregunta_10())
 
 def pregunta_11():
  
