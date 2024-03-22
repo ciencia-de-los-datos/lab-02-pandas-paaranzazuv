@@ -15,8 +15,8 @@ tbl2 = pd.read_csv("tbl2.tsv", sep="\t")
 
 
 def pregunta_01():
-    tbl0=tbl0.copy()
-    x=tbl0.shape
+    z=tbl0.copy()
+    x=z.shape
     return x[0]
 
 
@@ -43,7 +43,7 @@ def pregunta_02():
     4
 
  """
-print(pregunta_02())    
+
 
 def pregunta_03():
     
