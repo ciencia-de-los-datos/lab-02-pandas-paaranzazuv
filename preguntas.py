@@ -194,6 +194,7 @@ def pregunta_10():
     df=tbl0.copy()
          
     dfn = df.groupby("_c1")["_c2"].agg(lambda x: ":".join(map(str,x.sort_values( )))).reset_index()
+    dfn.set_index('_c1', inplace=True)
 
     #dfn.columns = ['_c0', '_c1']
 
@@ -216,6 +217,7 @@ def pregunta_10():
     return dfn
 
 
+print(pregunta_10())
 
 
 def pregunta_11():
